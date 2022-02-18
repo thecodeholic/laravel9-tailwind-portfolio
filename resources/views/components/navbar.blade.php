@@ -10,44 +10,18 @@
     <div class="container">
         <div class="flex -mx-4 items-center justify-between relative">
             <div class="px-4 w-60 max-w-full">
-                <a href="javascript:void(0)" class="w-full block py-5">
+                <a href="/" class="w-full flex items-center py-2">
                     <img
-                        src="https://cdn.tailgrids.com/1.0/assets/images/logo/logo.svg"
+                        src="{{ url('/img/logo.png') }}"
                         alt="logo"
-                        class="w-full"
+                        class="w-[64px]"
                     />
+                    <span class="text-2xl font-bold text-[#0c7187]">TheCodeholic</span>
                 </a>
             </div>
-            <div class="flex px-4 justify-between items-center w-full">
+            <div class="flex px-4 justify-end items-center w-full">
                 <div>
-                    <button
-                        @click="navbarOpen = !navbarOpen"
-                        :class="navbarOpen && 'navbarTogglerActive' "
-                        id="navbarToggler"
-                        class="
-                          block
-                          absolute
-                          right-4
-                          top-1/2
-                          -translate-y-1/2
-                          lg:hidden
-                          focus:ring-2
-                          ring-primary
-                          px-3
-                          py-[6px]
-                          rounded-lg
-                        "
-                    >
-                <span
-                    class="relative w-[30px] h-[2px] my-[6px] block bg-body-color"
-                ></span>
-                        <span
-                            class="relative w-[30px] h-[2px] my-[6px] block bg-body-color"
-                        ></span>
-                        <span
-                            class="relative w-[30px] h-[2px] my-[6px] block bg-body-color"
-                        ></span>
-                    </button>
+                    <x-navbar-hamburger @click="navbarOpen = !navbarOpen" x-bind:class="navbarOpen && 'navbarTogglerActive'"></x-navbar-hamburger>
                     <nav
                         :class="!navbarOpen && 'hidden' "
                         id="navbarCollapse"
@@ -67,10 +41,9 @@
                         "
                     >
                         <ul class="blcok lg:flex">
-                            <x-navbar-item href="/about">About</x-navbar-item>
-                            <x-navbar-item href="/projects">Projects</x-navbar-item>
-                            <x-navbar-item href="/tutorials">Coding Tutorials</x-navbar-item>
-                            <x-navbar-item href="/testimonials">Testimonials</x-navbar-item>
+                            @foreach($navigationItems as $item)
+                                <x-navbar-item :href="$item['href']">{{ $item['label'] }}</x-navbar-item>
+                            @endforeach
                         </ul>
                     </nav>
                 </div>

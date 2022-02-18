@@ -4,17 +4,16 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class NavbarItem extends Component
+class NavbarHamburger extends Component
 {
-    public string $href = '#';
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $href)
+    public function __construct()
     {
-        $this->href = $href;
+        //
     }
 
     /**
@@ -24,6 +23,6 @@ class NavbarItem extends Component
      */
     public function render()
     {
-        return view('components.navbar-item');
+        return view('components.navbar-hamburger');
     }
 }
