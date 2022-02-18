@@ -157,7 +157,7 @@ module.exports = plugin(
         colors: {
           dark: "#090E34",
           "dark-700": "#090e34b3",
-          primary: "#3056D3",
+          primary: "#0c7187",
           secondary: "#13C296",
           "body-color": "#637381",
           warning: "#F9C107",
@@ -182,7 +182,7 @@ module.exports = plugin(
           "card-2": "0px 1px 10px -2px rgba(0, 0, 0, 0.15)",
         },
         fontSize: {
-          'xs': '.75rem',
+          'xs': '.875rem',
           'tiny': '.875rem',
           'sm': '1rem',
           'base': '1.125rem',
