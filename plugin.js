@@ -17,7 +17,7 @@ module.exports = plugin(
       },
 
       [`body`]: {
-        fontFamily: `"Inter", sans-serif`,
+        fontFamily: `"Redressed", sans-serif`,
       },
 
       [`.navbarTogglerActive > span:nth-child(1)`]: {
@@ -181,6 +181,20 @@ module.exports = plugin(
           card: "0px 1px 3px rgba(0, 0, 0, 0.12)",
           "card-2": "0px 1px 10px -2px rgba(0, 0, 0, 0.15)",
         },
+        fontSize: {
+          'xs': '.75rem',
+          'tiny': '.875rem',
+          'sm': '1rem',
+          'base': '1.125rem',
+          'lg': '1.25rem',
+          'xl': '1.5rem',
+          '2xl': '1.875rem',
+          '3xl': '2.25rem',
+          '4xl': '3rem',
+          '5xl': '4rem',
+          '6xl': '5rem',
+          '7xl': '6rem',
+        }
       },
     },
   }

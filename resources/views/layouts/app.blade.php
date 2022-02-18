@@ -1,3 +1,12 @@
+@php
+$navigationItems = [
+    ['label' => 'About', 'href' => '#about' ],
+    ['label' => 'Projects', 'href' => '/projects' ],
+    ['label' => 'Coding Tutorials', 'href' => '#coding-tutorials' ],
+    ['label' => 'Testimonials', 'href' => '#testimonials' ],
+]
+@endphp
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -6,21 +15,11 @@
 
     <title>Laravel</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
-
-    <!-- Styles -->
-    <style>
-        body {
-            font-family: 'Nunito', sans-serif;
-        }
-    </style>
 </head>
 <body class="antialiased">
 <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-
+    <x-navbar :items="$navigationItems"></x-navbar>
     {{ $slot }}
 
 </div>
