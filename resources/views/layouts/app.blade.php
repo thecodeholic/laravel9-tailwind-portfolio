@@ -4,6 +4,7 @@ $navigationItems = [
     ['label' => 'Projects', 'href' => '/projects' ],
     ['label' => 'Coding Tutorials', 'href' => '#coding-tutorials' ],
     ['label' => 'Testimonials', 'href' => '#testimonials' ],
+    ['label' => 'Contact', 'href' => '#contact' ],
 ]
 @endphp
 
