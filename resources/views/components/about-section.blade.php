@@ -1,5 +1,5 @@
 <!-- ====== About Section Start -->
-<section class="pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] overflow-hidden">
+<section class="dark:bg-slate-800 pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] overflow-hidden">
     <div class="container">
         <div class="flex flex-wrap justify-between items-center -mx-4">
             <div class="w-full lg:w-6/12 px-4">
@@ -35,17 +35,19 @@
             <div class="w-full lg:w-1/2 xl:w-5/12 px-4">
                 <div class="mt-10 lg:mt-0">
                <span class="font-semibold text-lg text-primary mb-2 block">
-               Why Choose Us
+               <blockquote class="text-sm text-gray-500 italic py-2 px-3 border-l-4 border-amber-500">
+                   "Everything is achievable with hard working"
+               </blockquote>
                </span>
-                    <h2 class="font-bold text-3xl sm:text-4xl text-dark mb-8">
-                        Make your customers happy by giving services.
+                    <h2 class="font-bold text-3xl sm:text-4xl dark:text-gray-200 mb-8">
+                        About me
                     </h2>
-                    <p class="text-base text-body-color mb-8">
+                    <p class="text-base dark:text-gray-400 mb-8">
                         It is a long established fact that a reader will be distracted
                         by the readable content of a page when looking at its layout.
                         The point of using Lorem Ipsum is that it has a more-or-less.
                     </p>
-                    <p class="text-base text-body-color mb-12">
+                    <p class="text-base  dark:text-gray-400 mb-12">
                         A domain name is one of the first steps to establishing your
                         brand. Secure a consistent brand image with a domain name that
                         matches your business.
