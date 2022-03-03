@@ -757,20 +757,8 @@ body{
 .h-\[576px\]{
   height: 576px;
 }
-.h-\[300px\]{
-  height: 300px;
-}
-.h-\[500px\]{
-  height: 500px;
-}
-.h-\[200px\]{
-  height: 200px;
-}
 .h-\[320px\]{
   height: 320px;
-}
-.h-\[20px\]{
-  height: 20px;
 }
 .min-h-screen{
   min-height: 100vh;
@@ -880,6 +868,12 @@ body{
 }
 .resize-none{
   resize: none;
+}
+.list-inside{
+  list-style-position: inside;
+}
+.list-disc{
+  list-style-type: disc;
 }
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1018,9 +1012,6 @@ body{
 .p-6{
   padding: 1.5rem;
 }
-.p-5{
-  padding: 1.25rem;
-}
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1040,6 +1031,10 @@ body{
 .py-\[6px\]{
   padding-top: 6px;
   padding-bottom: 6px;
+}
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 .py-2{
   padding-top: 0.5rem;
@@ -1077,10 +1072,6 @@ body{
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1097,6 +1088,12 @@ body{
 .pt-11{
   padding-top: 2.75rem;
 }
+.pt-24{
+  padding-top: 6rem;
+}
+.pb-16{
+  padding-bottom: 4rem;
+}
 .pt-20{
   padding-top: 5rem;
 }
@@ -1112,11 +1109,11 @@ body{
 .pb-20{
   padding-bottom: 5rem;
 }
-.pb-16{
-  padding-bottom: 4rem;
+.pl-8{
+  padding-left: 2rem;
 }
-.pt-24{
-  padding-top: 6rem;
+.pl-6{
+  padding-left: 1.5rem;
 }
 .text-center{
   text-align: center;
@@ -1159,9 +1156,6 @@ body{
 }
 .font-medium{
   font-weight: 500;
-}
-.font-extrabold{
-  font-weight: 800;
 }
 .uppercase{
   text-transform: uppercase;
@@ -1242,6 +1236,10 @@ body{
 .text-\[\#0c7187\]{
   --tw-text-opacity: 1;
   color: rgb(12 113 135 / var(--tw-text-opacity));
+}
+.text-amber-500{
+  --tw-text-opacity: 1;
+  color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 .underline{
   -webkit-text-decoration-line: underline;
@@ -1609,14 +1607,6 @@ input#checkboxLabelFive:checked ~ .box{
     padding: 1.5rem;
   }
 
-  .sm\:p-9{
-    padding: 2.25rem;
-  }
-
-  .sm\:p-7{
-    padding: 1.75rem;
-  }
-
   .sm\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -1659,10 +1649,6 @@ input#checkboxLabelFive:checked ~ .box{
 
   .sm\:text-lg{
     font-size: 1.25rem;
-  }
-
-  .sm\:text-\[22px\]{
-    font-size: 22px;
   }
 }
 
@@ -1712,22 +1698,6 @@ input#checkboxLabelFive:checked ~ .box{
     padding: 70px;
   }
 
-  .md\:p-7{
-    padding: 1.75rem;
-  }
-
-  .md\:p-3{
-    padding: 0.75rem;
-  }
-
-  .md\:p-6{
-    padding: 1.5rem;
-  }
-
-  .md\:p-5{
-    padding: 1.25rem;
-  }
-
   .md\:px-9{
     padding-left: 2.25rem;
     padding-right: 2.25rem;
@@ -1740,10 +1710,6 @@ input#checkboxLabelFive:checked ~ .box{
 
   .md\:text-\[40px\]{
     font-size: 40px;
-  }
-
-  .md\:text-xl{
-    font-size: 1.5rem;
   }
 }
 
@@ -1849,10 +1815,6 @@ input#checkboxLabelFive:checked ~ .box{
     justify-content: space-between;
   }
 
-  .lg\:p-6{
-    padding: 1.5rem;
-  }
-
   .lg\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1908,10 +1870,6 @@ input#checkboxLabelFive:checked ~ .box{
     font-size: 36px;
   }
 
-  .lg\:text-\[22px\]{
-    font-size: 22px;
-  }
-
   .lg\:shadow-none{
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
@@ -1945,14 +1903,6 @@ input#checkboxLabelFive:checked ~ .box{
     width: 66.666667%;
   }
 
-  .xl\:p-9{
-    padding: 2.25rem;
-  }
-
-  .xl\:p-5{
-    padding: 1.25rem;
-  }
-
   .xl\:p-7{
     padding: 1.75rem;
   }
@@ -1978,10 +1928,6 @@ input#checkboxLabelFive:checked ~ .box{
   .xl\:text-\[40px\]{
     font-size: 40px;
   }
-
-  .xl\:text-xl{
-    font-size: 1.5rem;
-  }
 }
 
 @media (min-width: 1320px){
@@ -2004,10 +1950,6 @@ input#checkboxLabelFive:checked ~ .box{
 
   .\32xl\:pl-0{
     padding-left: 0px;
-  }
-
-  .\32xl\:text-\[22px\]{
-    font-size: 22px;
   }
 }
 
