@@ -45,10 +45,11 @@
               All Projects
             </button>
           </li>
+          @foreach($tabs as $tab)
           <li class="mb-1">
             <button
-              @click="showCards = 'branding' "
-              :class="showCards == 'branding' ? activeClasses : inactiveClasses "
+              @click="showCards = $tab "
+              :class="showCards === $tab ? activeClasses : inactiveClasses "
               class="
                                 inline-block
                                 py-2
@@ -62,76 +63,18 @@
                                 transition
                               "
             >
-              Laravel
+              {{$tab}}
             </button>
           </li>
-          <li class="mb-1">
-            <button
-              @click="showCards = 'design' "
-              :class="showCards == 'design' ? activeClasses : inactiveClasses "
-              class="
-                                inline-block
-                                py-2
-                                md:py-3
-                                px-5
-                                lg:px-8
-                                rounded-lg
-                                text-base
-                                font-semibold
-                                text-center
-                                transition
-                              "
-            >
-              Vue.js
-            </button>
-          </li>
-          <li class="mb-1">
-            <button
-              @click="showCards = 'marketing' "
-              :class="showCards == 'marketing' ? activeClasses : inactiveClasses "
-              class="
-                                inline-block
-                                py-2
-                                md:py-3
-                                px-5
-                                lg:px-8
-                                rounded-lg
-                                text-base
-                                font-semibold
-                                text-center
-                                transition
-                              "
-            >
-              Yii2
-            </button>
-          </li>
-          <li class="mb-1">
-            <button
-              @click="showCards = 'development' "
-              :class="showCards == 'development' ? activeClasses : inactiveClasses "
-              class="
-                                inline-block
-                                py-2
-                                md:py-3
-                                px-5
-                                lg:px-8
-                                rounded-lg
-                                text-base
-                                font-semibold
-                                text-center
-                                transition
-                              "
-            >
-              Tailwindcss
-            </button>
-          </li>
+          @endforeach
         </ul>
       </div>
     </div>
     <div class="flex flex-wrap -mx-4">
-      @for ($i = 0; $i<6; $i++)
-        <x-portfolio-item></x-portfolio-item>
-      @endfor
+      @foreach ($items as $item)
+        <x-portfolio-item :title="$item['title']" :category="$item['category']"
+                          :image="$item['image']"></x-portfolio-item>
+      @endforeach
     </div>
   </div>
 </section>

@@ -1,7 +1,8 @@
 <div
-  :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' "
+  :class="showCards == 'all' || $attributes->get('category').includes(showCards) ? 'block' : 'hidden' "
   class="w-full md:w-1/2 xl:w-1/3 px-4"
 >
+  <h1 x-text="showCards"></h1>
   <div class="relative mb-12">
     <div class="rounded-lg overflow-hidden">
       <img
@@ -25,7 +26,7 @@
       "
     >
       <span class="text-sm text-primary font-semibold block mb-2">
-        {{ $attributes->get('subtitle') }}
+        {{ implode(", ", $attributes->get('category')) }}
       </span>
       <h3 class="font-bold text-lg text-dark mb-4">
         {{ $attributes->get('title') }}

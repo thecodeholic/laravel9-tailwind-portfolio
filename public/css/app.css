@@ -869,12 +869,6 @@ body{
 .resize-none{
   resize: none;
 }
-.list-inside{
-  list-style-position: inside;
-}
-.list-disc{
-  list-style-type: disc;
-}
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -1109,12 +1103,6 @@ body{
 .pb-20{
   padding-bottom: 5rem;
 }
-.pl-8{
-  padding-left: 2rem;
-}
-.pl-6{
-  padding-left: 1.5rem;
-}
 .text-center{
   text-align: center;
 }
@@ -1233,13 +1221,13 @@ body{
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
-.text-\[\#0c7187\]{
-  --tw-text-opacity: 1;
-  color: rgb(12 113 135 / var(--tw-text-opacity));
-}
 .text-amber-500{
   --tw-text-opacity: 1;
   color: rgb(245 158 11 / var(--tw-text-opacity));
+}
+.text-\[\#0c7187\]{
+  --tw-text-opacity: 1;
+  color: rgb(12 113 135 / var(--tw-text-opacity));
 }
 .underline{
   -webkit-text-decoration-line: underline;
