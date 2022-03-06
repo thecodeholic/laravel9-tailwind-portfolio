@@ -835,6 +835,12 @@ body{
 .w-\[1032px\]{
   width: 1032px;
 }
+.w-\[40px\]{
+  width: 40px;
+}
+.w-\[80px\]{
+  width: 80px;
+}
 .min-w-\[300px\]{
   min-width: 300px;
 }
