@@ -30,7 +30,7 @@
     <x-about-section></x-about-section>
     <x-portfolio-section></x-portfolio-section>
     <x-video-tutorials></x-video-tutorials>
-    <x-testimonials></x-testimonials>
+{{--    <x-testimonials></x-testimonials>--}}
     <x-section.contact></x-section.contact>
     <x-footer></x-footer>
 </x-app-layout>
