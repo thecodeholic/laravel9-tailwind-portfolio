@@ -1,9 +1,9 @@
 @php
     $navigationItems = [
         ['label' => 'About', 'href' => '#about' ],
-        ['label' => 'Projects', 'href' => '/projects' ],
-        ['label' => 'Coding Tutorials', 'href' => '#coding-tutorials' ],
-        ['label' => 'Testimonials', 'href' => '#testimonials' ],
+        ['label' => 'Projects', 'href' => '#portfolio' ],
+        ['label' => 'Coding Tutorials', 'href' => '#tutorials' ],
+    //    ['label' => 'Testimonials', 'href' => '#testimonials' ],
         ['label' => 'Contact', 'href' => '#contact' ],
     ]
 @endphp
@@ -17,8 +17,9 @@
     <title>Laravel</title>
 
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+    <script src="https://apis.google.com/js/platform.js"></script>
 </head>
-<body class="antialiased text-gray-800 dark:text-gray-200">
+<body class="antialiased text-gray-800 dark:text-gray-200 pt-24">
 <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
     <x-navbar :items="$navigationItems"></x-navbar>
     {{ $slot }}

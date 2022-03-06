@@ -7,14 +7,15 @@ use Illuminate\View\Component;
 class PortfolioItem extends Component
 {
     /**
-     * Create a new component instance.
-     *
-     * @return void
+     * @param string $title
+     * @param array  $categories
+     * @param string $image
+     * @param string $github
      */
-    public function __construct()
+    public function __construct(public string $title, public array $categories, public string $image, public string $github)
     {
-        //
     }
+
 
     /**
      * Get the view / contents that represent the component.

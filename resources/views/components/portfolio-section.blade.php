@@ -1,5 +1,6 @@
 <!-- ====== Portfolio Section Start -->
 <section
+  id="portfolio"
   x-data="
         {
           showCards: 'all',
@@ -29,18 +30,7 @@
             <button
               @click="showCards = 'all' "
               :class="showCards == 'all' ? activeClasses : inactiveClasses "
-              class="
-                                inline-block
-                                py-2
-                                md:py-3
-                                px-5
-                                lg:px-8
-                                rounded-lg
-                                text-base
-                                font-semibold
-                                text-center
-                                transition
-                              "
+              class="inline-block py-2 md:py-3 px-5 lg:px-8 rounded-lg text-base font-semibold text-center transition "
             >
               All Projects
             </button>
@@ -48,21 +38,9 @@
           @foreach($tabs as $tab)
           <li class="mb-1">
             <button
-              @click="showCards = $tab "
-              :class="showCards === $tab ? activeClasses : inactiveClasses "
-              class="
-                                inline-block
-                                py-2
-                                md:py-3
-                                px-5
-                                lg:px-8
-                                rounded-lg
-                                text-base
-                                font-semibold
-                                text-center
-                                transition
-                              "
-            >
+              @click="showCards = '{{$tab}}' "
+              :class="showCards === '{{$tab}}' ? activeClasses : inactiveClasses "
+              class="inline-block py-2 md:py-3 px-5 lg:px-8 rounded-lg text-base font-semibold text-center transition ">
               {{$tab}}
             </button>
           </li>
@@ -72,8 +50,10 @@
     </div>
     <div class="flex flex-wrap -mx-4">
       @foreach ($items as $item)
-        <x-portfolio-item :title="$item['title']" :category="$item['category']"
-                          :image="$item['image']"></x-portfolio-item>
+        <x-portfolio-item :title="$item['title']"
+                          :categories="$item['category']"
+                          :image="$item['image']"
+                          :github="$item['github']"></x-portfolio-item>
       @endforeach
     </div>
   </div>
