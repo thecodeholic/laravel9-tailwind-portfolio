@@ -19,7 +19,7 @@
 @endphp
 
 <!-- ====== Cards Section Start -->
-<section class="dark:bg-slate-800 pt-24 pb-16">
+<section id="tutorials" class="dark:bg-slate-800 pt-24 pb-16">
     <div class="container">
         <div class="flex flex-wrap -mx-4">
             <div class="w-full px-4">
