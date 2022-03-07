@@ -1564,6 +1564,11 @@ input#checkboxLabelFive:checked ~ .box{
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-slate-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:text-gray-200{
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
