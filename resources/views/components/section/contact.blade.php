@@ -1,5 +1,5 @@
 <!-- ====== Contact Section Start -->
-<section id="contact" class="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10">
+<section id="contact" class="bg-white dark:bg-primary py-20 lg:py-[120px] overflow-hidden relative z-10">
    <div class="container">
       <div class="flex flex-wrap lg:justify-between -mx-4">
          <div class="w-full lg:w-1/2 xl:w-6/12 px-4">
@@ -7,6 +7,7 @@
                <h2
                   class="
                   text-dark
+                  dark:text-gray-100
                   mb-6
                   uppercase
                   font-bold
@@ -18,7 +19,7 @@
                   >
                   FOR BUSINESS ENQUIRIES
                </h2>
-               <p class="text-base text-body-color leading-relaxed mb-9">
+               <p class="text-base text-body-color dark:text-gray-200 leading-relaxed mb-9">
                   If you feel my experience and skills fits your needs, feel free to contact me.
                </p>
                <div class="flex mb-8 max-w-[370px] w-full">
@@ -36,6 +37,7 @@
                      overflow-hidden
                      bg-primary bg-opacity-5
                      text-primary
+                     dark:text-gray-300
                      rounded
                      "
                      >
@@ -51,16 +53,16 @@
                      </svg>
                   </div>
                   <div class="w-full">
-                     <h4 class="font-bold text-dark text-xl mb-1">
+                     <h4 class="font-bold text-dark dark:text-gray-200 text-xl mb-1">
                         Email Address
                      </h4>
-                     <p class="text-base text-body-color">thecodeholic@gmail.com</p>
+                     <p class="text-base text-body-color dark:text-gray-300">thecodeholic@gmail.com</p>
                   </div>
                </div>
             </div>
          </div>
          <div class="w-full lg:w-1/2 xl:w-5/12 px-4">
-            <div class="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
+            <div class="bg-white dark:bg-slate-900 relative rounded-lg p-8 sm:p-12 shadow-lg">
                <form>
                  @csrf
                   <div class="mb-6">
@@ -77,6 +79,8 @@
                         outline-none
                         focus-visible:shadow-none
                         focus:border-primary
+                        dark:bg-slate-800
+                        dark:text-gray-300
                         "
                         />
                   </div>
@@ -94,6 +98,8 @@
                         outline-none
                         focus-visible:shadow-none
                         focus:border-primary
+                        dark:bg-slate-800
+                        dark:text-gray-300
                         "
                         />
                   </div>
@@ -111,6 +117,8 @@
                         outline-none
                         focus-visible:shadow-none
                         focus:border-primary
+                        dark:bg-slate-800
+                        dark:text-gray-300
                         "
                         />
                   </div>
@@ -129,6 +137,8 @@
                         outline-none
                         focus-visible:shadow-none
                         focus:border-primary
+                        dark:bg-slate-800
+                        dark:text-gray-300
                         "
                         ></textarea>
                   </div>
