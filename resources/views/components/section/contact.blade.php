@@ -54,7 +54,7 @@
                      <h4 class="font-bold text-dark text-xl mb-1">
                         Email Address
                      </h4>
-                     <p class="text-base text-body-color">info@yourdomain.com</p>
+                     <p class="text-base text-body-color">thecodeholic@gmail.com</p>
                   </div>
                </div>
             </div>
