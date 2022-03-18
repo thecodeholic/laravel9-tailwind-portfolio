@@ -718,6 +718,9 @@ body{
 .inline-flex{
   display: inline-flex;
 }
+.table{
+  display: table;
+}
 .grid{
   display: grid;
 }
@@ -1550,6 +1553,11 @@ input#checkboxLabelFive:checked ~ .box{
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
+.dark .dark\:text-gray-100{
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
 .dark .dark\:text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1558,11 +1566,6 @@ input#checkboxLabelFive:checked ~ .box{
 .dark .dark\:text-gray-400{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.dark .dark\:text-gray-100{
-  --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
 @media (min-width: 400px){

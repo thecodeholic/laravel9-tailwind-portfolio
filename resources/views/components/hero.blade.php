@@ -55,7 +55,7 @@
         <div class="lg:text-right lg:ml-auto">
           <div class="relative inline-block z-10 pt-11 lg:pt-0">
             <img
-              src="https://cdn.tailgrids.com/1.0/assets/images/hero/hero-image-01.png"
+              src="{{ url('/img/me_hero.png') }}"
               alt="hero"
               class="max-w-full lg:ml-auto"
             />
