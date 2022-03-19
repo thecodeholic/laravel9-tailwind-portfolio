@@ -73,22 +73,24 @@
                     },
                     body: JSON.stringify(this.formData)
                   })
-                  .then(response => response.json())
-                  .then(result => {
-                    console.log(result);
-                    if (result.errors) {
-                      this.errors = result.errors;
-                    } else {
-                      this.formData = {
-                        name: '',
-                        email: '',
-                        message: '',
-                      };
-                      this.successMessage = 'Thanks for your contact request. I will get back to you shortly.';
+                  .then(response => {
+                    if (response.status === 200) {
+                      return response.json();
                     }
-
+                    throw response;
+                  })
+                  .then(result => {
+                    this.formData = {
+                      name: '',
+                      email: '',
+                      message: '',
+                    };
+                    this.successMessage = 'Thanks for your contact request. I will get back to you shortly.';
                   })
                   .catch(res => {
+                    if (res.status === 422) {
+                      this.errors = result.errors;
+                    }
                     console.log(res);
                   })
               }
