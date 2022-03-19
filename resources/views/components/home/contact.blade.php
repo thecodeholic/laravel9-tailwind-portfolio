@@ -4,19 +4,7 @@
     <div class="flex flex-wrap lg:justify-between -mx-4">
       <div class="w-full lg:w-1/2 xl:w-6/12 px-4">
         <div class="max-w-[570px] mb-12 lg:mb-0">
-          <h2
-            class="
-                  text-dark
-                  dark:text-gray-100
-                  mb-6
-                  uppercase
-                  font-bold
-                  text-[32px]
-                  sm:text-[40px]
-                  lg:text-[36px]
-                  xl:text-[40px]
-                  "
-          >
+          <h2 class="text-dark dark:text-gray-100 mb-6 uppercase font-bold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[40px]">
             FOR BUSINESS ENQUIRIES
           </h2>
           <p class="text-base text-body-color dark:text-gray-200 leading-relaxed mb-9">
@@ -63,84 +51,70 @@
       </div>
       <div class="w-full lg:w-1/2 xl:w-5/12 px-4">
         <div class="bg-white dark:bg-slate-900 relative rounded-lg p-8 sm:p-12 shadow-lg">
-          <form>
+          <form action="/contact/submit" method="POST" x-data="
+          {
+              formData: {
+                name: '',
+                email: '',
+                message: '',
+              },
+              errors: {},
+              successMessage: '',
+
+              submitForm(event) {
+                this.successMessage = '';
+                this.errors = {};
+                  fetch(`/contact/submit`, {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                      'X-Requested-With': 'XMLHttpRequest',
+                      'X-CSRF-TOKEN': document.querySelector(`meta[name='csrf-token']`).getAttribute('content')
+                    },
+                    body: JSON.stringify(this.formData)
+                  })
+                  .then(response => response.json())
+                  .then(result => {
+                    console.log(result);
+                    if (result.errors) {
+                      this.errors = result.errors;
+                    } else {
+                      this.formData = {
+                        name: '',
+                        email: '',
+                        message: '',
+                      };
+                      this.successMessage = 'Thanks for your contact request. I will get back to you shortly.';
+                    }
+
+                  })
+                  .catch(res => {
+                    console.log(res);
+                  })
+              }
+          }
+          " x-on:submit.prevent="submitForm">
+            <template x-if="successMessage">
+              <div x-text="successMessage" class="py-4 px-6 bg-green-600 text-gray-100 mb-4"></div>
+            </template>
             @csrf
             <div class="mb-6">
-              <input
-                type="text"
-                placeholder="Your Name"
-                class="
-                  w-full
-                  rounded
-                  py-3
-                  px-[14px]
-                  text-body-color text-base
-                  border border-[f0f0f0]
-                  outline-none
-                  focus-visible:shadow-none
-                  focus:border-primary
-                  dark:bg-slate-800
-                  dark:text-gray-300
-                  "
-              />
+              <x-forms.input placeholder="Your Name" name="name" x-model="formData.name" ::class="errors.name ? 'border-red-500 focus:border-red-500' : ''"></x-forms.input>
+              <template x-if="errors.name">
+                <div x-text="errors.name[0]" class="text-red-500"></div>
+              </template>
             </div>
             <div class="mb-6">
-              <input
-                type="email"
-                placeholder="Your Email"
-                class="
-                  w-full
-                  rounded
-                  py-3
-                  px-[14px]
-                  text-body-color text-base
-                  border border-[f0f0f0]
-                  outline-none
-                  focus-visible:shadow-none
-                  focus:border-primary
-                  dark:bg-slate-800
-                  dark:text-gray-300
-                  "
-              />
+              <x-forms.input type="email" placeholder="Your Email" name="email" x-model="formData.email" ::class="errors.email ? 'border-red-500 focus:border-red-500' : ''"></x-forms.input>
+              <template x-if="errors.email">
+                <div x-text="errors.email[0]" class="text-red-500"></div>
+              </template>
             </div>
             <div class="mb-6">
-              <input
-                type="text"
-                placeholder="Your Phone"
-                class="
-                  w-full
-                  rounded
-                  py-3
-                  px-[14px]
-                  text-body-color text-base
-                  border border-[f0f0f0]
-                  outline-none
-                  focus-visible:shadow-none
-                  focus:border-primary
-                  dark:bg-slate-800
-                  dark:text-gray-300
-                  "
-              />
-            </div>
-            <div class="mb-6">
-               <textarea
-                 rows="6"
-                 placeholder="Your Message"
-                 class="
-                  w-full
-                  rounded
-                  py-3
-                  px-[14px]
-                  text-body-color text-base
-                  border border-[f0f0f0]
-                  resize-none
-                  outline-none
-                  focus-visible:shadow-none
-                  focus:border-primary
-                  dark:bg-slate-800
-                  dark:text-gray-300
-                  "
-               ></textarea>
+              <x-forms.textarea placeholder="Your Message" name="message" rows="6" x-model="formData.message" ::class="errors.message ? 'border-red-500 focus:border-red-500' : ''"></x-forms.textarea>
+              <template x-if="errors.message">
+                <div x-text="errors.message[0]" class="text-red-500"></div>
+              </template>
             </div>
             <div>
               <x-core.button class="w-full">
