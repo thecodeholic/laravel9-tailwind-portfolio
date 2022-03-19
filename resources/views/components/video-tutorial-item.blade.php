@@ -7,7 +7,7 @@
           <div class="w-full h-full absolute top-0 left-0 p-3">
             <!-- Thumbnail -->
             <img
-              src="https://i.ytimg.com/vi/{{ $attributes->get('video-id') }}/original.jpg"
+              src="https://i.ytimg.com/vi/{{ $videoId }}/original.jpg"
               alt="image"
               class="w-full h-full object-center object-cover rounded-lg"
             />
@@ -51,7 +51,7 @@
         <div @click.outside="videoOpen = false" class="w-[1032px] h-[576px] mx-auto bg-white">
           <iframe
             class="w-full h-full"
-            src="https://www.youtube.com/embed/{{ $attributes->get('video-id') }}?autoplay=1"
+            src="https://www.youtube.com/embed/{{ $videoId }}?autoplay=1"
           >
           </iframe>
         </div>
@@ -74,15 +74,15 @@
     <div class="p-6 xl:p-7 2xl:p-9 h-[320px] overflow-hidden text-center">
       <h3>
         <a
-          href="https://youtu.be/{{ $attributes->get('video-id') }}"
+          href="https://youtu.be/{{ $videoId }}"
           target="_blank "
           class="font-bold text-dark text-lg mb-4 block hover:text-primary"
         >
-          {{ $attributes->get('title') }}
+          {{ $title }}
         </a>
       </h3>
       <p class="text-base text-body-color leading-relaxed mb-7">
-        {{ $attributes->get('description') }}
+        {{ $description }}
       </p>
     </div>
     <!-- /Video Content -->
