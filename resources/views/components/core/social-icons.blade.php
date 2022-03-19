@@ -9,12 +9,16 @@
          items-center
          justify-center
          rounded-full
-         border border-[#E5E5E5]
+         border
+         border-dark
+         border-2
+         dark:border-white
          text-dark
          dark:text-white
          hover:text-white
          hover:bg-primary
          hover:border-primary
+         hover:dark:border-primary
          mr-3
          sm:mr-4
          lg:mr-3
@@ -22,8 +26,8 @@
     "
   >
     <svg
-      width="8"
-      height="16"
+      width="10"
+      height="18"
       viewBox="0 0 8 16"
       class="fill-current"
     >
@@ -42,12 +46,16 @@
        items-center
        justify-center
        rounded-full
-       border border-[#E5E5E5]
+       border
+       border-dark
+       border-2
+       dark:border-white
        text-dark
        dark:text-white
        hover:text-white
        hover:bg-primary
        hover:border-primary
+       hover:dark:border-primary
        mr-3
        sm:mr-4
        lg:mr-3
@@ -55,8 +63,8 @@
     "
   >
     <svg
-      width="16"
-      height="12"
+      width="18"
+      height="14"
       viewBox="0 0 16 12"
       class="fill-current"
     >
@@ -75,12 +83,16 @@
        items-center
        justify-center
        rounded-full
-       border border-[#E5E5E5]
+       border
+       border-dark
+       border-2
+       dark:border-white
        text-dark
        dark:text-white
        hover:text-white
        hover:bg-primary
        hover:border-primary
+       hover:dark:border-primary
        mr-3
        sm:mr-4
        lg:mr-3
@@ -88,8 +100,8 @@
     "
   >
     <svg
-      width="16"
-      height="12"
+      width="18"
+      height="16"
       viewBox="0 0 16 12"
       class="fill-current"
     >
@@ -108,10 +120,14 @@
        items-center
        justify-center
        rounded-full
-       border border-[#E5E5E5]
+       border border-dark
+       border-2 dark:border-white
        text-dark
-        dark:text-white
-       hover:text-white hover:bg-primary hover:border-primary
+       dark:text-white
+       hover:text-white
+       hover:bg-primary
+       hover:border-primary
+       hover:dark:border-primary
        mr-3
        sm:mr-4
        lg:mr-3
