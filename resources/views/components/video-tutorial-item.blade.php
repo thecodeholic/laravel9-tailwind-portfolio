@@ -1,7 +1,11 @@
 <div class="w-full md:w-1/2 xl:w-1/3 px-4">
   <div class="bg-white rounded-lg mb-10">
     <!-- ====== Video Section Start -->
-    <section x-data="{ videoOpen: false}">
+    <section x-data="{
+          videoOpen: false,
+          videoUrl: 'https://www.youtube.com/embed/{{ $videoId }}?autoplay=1',
+          url: '',
+        }">
       <div class="flex flex-wrap justify-center">
         <div class="w-full aspect-video relative z-20">
           <div class="w-full h-full absolute top-0 left-0 p-3">
@@ -17,7 +21,7 @@
             <!-- Play Video -->
             <a
               href="javascript:void(0)"
-              @click="videoOpen = true"
+              @click="videoOpen = true; url = videoUrl"
               class="flex items-center justify-center w-20 md:w-[70px] h-20 md:h-[70px] rounded-full bg-white text-primary absolute z-20"
             >
                 <span
@@ -48,10 +52,10 @@
         x-transition
         class="fixed top-0 left-0 w-full h-screen flex items-center justify-center z-50 bg-black bg-opacity-70"
       >
-        <div @click.outside="videoOpen = false" class="w-[1032px] h-[576px] mx-auto bg-white">
+        <div @click.outside="videoOpen = false; url = ''" class="w-11/12 md:w-10/12 xl:w-8/12 mx-auto bg-white">
           <iframe
-            class="w-full h-full"
-            src="https://www.youtube.com/embed/{{ $videoId }}?autoplay=1"
+            class="w-full aspect-video"
+            x-bind:src="url"
           >
           </iframe>
         </div>
