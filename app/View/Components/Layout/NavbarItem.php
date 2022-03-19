@@ -7,15 +7,13 @@ use function view;
 
 class NavbarItem extends Component
 {
-    public string $href = '#';
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $href)
+    public function __construct(public string $href)
     {
-        $this->href = $href;
     }
 
     /**
