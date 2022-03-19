@@ -1,10 +1,11 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Home;
 
 use Illuminate\View\Component;
+use function view;
 
-class CallToAction extends Component
+class About extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +24,6 @@ class CallToAction extends Component
      */
     public function render()
     {
-        return view('components.call-to-action');
+        return view('components.home.about');
     }
 }

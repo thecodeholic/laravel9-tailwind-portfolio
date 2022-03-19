@@ -26,8 +26,8 @@
       </div>
       <div class="flex px-4 justify-end items-center w-full">
         <div>
-          <x-navbar-hamburger @click="navbarOpen = !navbarOpen"
-                              x-bind:class="navbarOpen && 'navbarTogglerActive'"></x-navbar-hamburger>
+          <x-layout.navbar-hamburger @click="navbarOpen = !navbarOpen"
+                              x-bind:class="navbarOpen && 'navbarTogglerActive'"></x-layout.navbar-hamburger>
           <nav
             :class="!navbarOpen && 'hidden' "
             id="navbarCollapse"
@@ -51,7 +51,7 @@
           >
             <ul class="block lg:flex lg:items-center">
               @foreach($navigationItems as $item)
-                <x-navbar-item :href="$item['href']">{{ $item['label'] }}</x-navbar-item>
+                <x-layout.navbar-item :href="$item['href']">{{ $item['label'] }}</x-layout.navbar-item>
               @endforeach
 
               <div class="ml-16 relative top-1">

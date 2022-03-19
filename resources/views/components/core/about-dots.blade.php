@@ -18,8 +18,7 @@
            cy="104"
            r="1.66667"
            transform="rotate(-90 16.3333 104)"
-           fill="#3056D3"
-       />
+           fill="#3056D3"       />
        <circle
            cx="31"
            cy="104"

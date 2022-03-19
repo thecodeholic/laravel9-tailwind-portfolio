@@ -46,7 +46,7 @@
               Follow me on social media
               <span class="w-8 h-[1px] bg-body-color inline-block ml-2"></span>
             </h6>
-            <x-social-icons></x-social-icons>
+            <x-core.social-icons></x-core.social-icons>
           </div>
         </div>
       </div>

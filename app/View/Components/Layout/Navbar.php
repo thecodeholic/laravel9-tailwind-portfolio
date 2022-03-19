@@ -1,20 +1,21 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Layout;
 
 use Illuminate\View\Component;
 
-class NavbarItem extends Component
+class Navbar extends Component
 {
-    public string $href = '#';
+    public array $navigationItems = [];
+
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $href)
+    public function __construct(array $items)
     {
-        $this->href = $href;
+        $this->navigationItems = $items;
     }
 
     /**
@@ -24,6 +25,6 @@ class NavbarItem extends Component
      */
     public function render()
     {
-        return view('components.navbar-item');
+        return view('layout.navbar');
     }
 }

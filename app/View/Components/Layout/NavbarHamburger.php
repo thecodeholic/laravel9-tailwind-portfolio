@@ -1,10 +1,10 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Layout;
 
 use Illuminate\View\Component;
 
-class AboutSection extends Component
+class NavbarHamburger extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class AboutSection extends Component
      */
     public function render()
     {
-        return view('components.about-section');
+        return view('layout.navbar-hamburger');
     }
 }

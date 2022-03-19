@@ -1,22 +1,20 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Home;
 
 use Illuminate\View\Component;
+use function view;
 
-class Navbar extends Component
+class Hero extends Component
 {
-
-    public array $navigationItems = [];
-
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(array $items)
+    public function __construct()
     {
-        $this->navigationItems = $items;
+        //
     }
 
     /**
@@ -26,6 +24,6 @@ class Navbar extends Component
      */
     public function render()
     {
-        return view('components.navbar');
+        return view('components.home.hero');
     }
 }

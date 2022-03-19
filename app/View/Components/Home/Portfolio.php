@@ -1,11 +1,13 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Home;
 
 use Illuminate\Support\Arr;
 use Illuminate\View\Component;
+use function url;
+use function view;
 
-class PortfolioSection extends Component
+class Portfolio extends Component
 {
     public array $items = [];
 
@@ -67,6 +69,6 @@ class PortfolioSection extends Component
      */
     public function render()
     {
-        return view('components.portfolio-section');
+        return view('components.home.portfolio');
     }
 }

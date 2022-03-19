@@ -7,7 +7,7 @@
           <div class="w-full xl:w-1/2 px-3 sm:px-4">
             <div class="py-3 sm:py-4">
               <img
-                src="{{ url('/img/me11.png') }}"
+                src="{{ url('/img/me1.png') }}"
                 alt=""
                 class="rounded-2xl w-full"
               />
@@ -27,7 +27,7 @@
                 alt=""
                 class="rounded-2xl w-full"
               />
-              <x-about.dots></x-about.dots>
+              <x-core.about-dots></x-core.about-dots>
             </div>
           </div>
         </div>
