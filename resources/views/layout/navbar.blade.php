@@ -1,10 +1,6 @@
 <!-- ====== Navbar Section Start -->
 <header
-  x-data="
-        {
-          navbarOpen: false
-        }
-      "
+  x-data="{navbarOpen: false}"
   class="fixed left-0 top-0 z-50 bg-white w-full flex items-center shadow-md dark:bg-slate-900 h-24"
 >
   <div class="container">
@@ -27,27 +23,11 @@
       <div class="flex px-4 justify-end items-center w-full">
         <div>
           <x-layout.navbar-hamburger @click="navbarOpen = !navbarOpen"
-                              x-bind:class="navbarOpen && 'navbarTogglerActive'"></x-layout.navbar-hamburger>
+                                     x-bind:class="navbarOpen && 'navbarTogglerActive'"></x-layout.navbar-hamburger>
           <nav
             :class="!navbarOpen && 'hidden' "
             id="navbarCollapse"
-            class="
-                          absolute
-                          py-5
-                          px-6
-                          shadow
-                          rounded-lg
-                          max-w-[250px]
-                          w-full
-                          lg:max-w-full
-                          lg:w-full
-                          right-4
-                          top-full
-                          lg:block
-                          lg:static
-                          lg:shadow-none
-                          dark:text-gray-300
-                        "
+            class="absolute py-5 px-6 shadow rounded-lg max-w-[250px] w-full lg:max-w-full lg:w-full right-4 top-full lg:block lg:static lg:shadow-none dark:text-gray-300"
           >
             <ul class="block lg:flex lg:items-center">
               @foreach($navigationItems as $item)
@@ -55,7 +35,8 @@
               @endforeach
 
               <div class="ml-16 relative top-1">
-                <div class="g-ytsubscribe" data-channelid="UC_UMEcP_kF0z4E6KbxCpV1w" data-layout="default" data-count="default"></div>
+                <div class="g-ytsubscribe" data-channelid="UC_UMEcP_kF0z4E6KbxCpV1w" data-layout="default"
+                     data-count="default"></div>
               </div>
             </ul>
           </nav>

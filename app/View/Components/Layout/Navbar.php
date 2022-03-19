@@ -13,9 +13,15 @@ class Navbar extends Component
      *
      * @return void
      */
-    public function __construct(array $items)
+    public function __construct()
     {
-        $this->navigationItems = $items;
+        $this->navigationItems = [
+            ['label' => 'About', 'href' => '#about'],
+            ['label' => 'Projects', 'href' => '#portfolio'],
+            ['label' => 'Coding Tutorials', 'href' => '#tutorials'],
+            ['label' => 'Testimonials', 'href' => '#testimonials' ],
+            ['label' => 'Contact', 'href' => '#contact'],
+        ];
     }
 
     /**
