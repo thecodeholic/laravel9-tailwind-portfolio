@@ -1,15 +1,13 @@
 <x-core.call-to-action>
   <x-slot:title>
-            <span class="text-white text-base font-semibold mb-2">
-                Check my PHP Developer Roadmap
-            </span>
-    <h2
-      class=" text-white font-bold text-3xl sm:text-[38px] leading-tight mb-6 sm:mb-8 lg:mb-0 "
-    >
+    <h4 class="text-white text-base font-semibold mb-2">
+      Check my PHP Developer Roadmap
+    </h4>
+    <h2 class=" text-white font-bold text-3xl sm:text-[38px] leading-tight mb-6 sm:mb-8 lg:mb-0 ">
       Start Learning <br class="hidden xs:block"/>
       PHP For FREE
     </h2>
-    </x-slot>
+  </x-slot>
     <a
       href="https://github.com/thecodeholic/php-developer-roadmap"
       target="_blank"
