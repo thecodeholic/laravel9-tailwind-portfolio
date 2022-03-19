@@ -52,13 +52,9 @@
             <span class="text-amber-500 font-bold">PHP</span> and <span class="text-amber-500 font-bold">JavaScript</span>. <br />
             My content is mostly focused on practical examples and projects. <br />
           </p>
-          <a
-            href="https://youtube.com/thecodeholic"
-            target="_blank"
-            class=" inline-block py-4 px-6 md:px-9 lg:px-6 xl:px-9 rounded text-base font-medium bg-red-700 transition hover:bg-opacity-90 text-white my-1 "
-          >
-              View my channel
-          </a>
+          <x-core.button-link href="https://youtube.com/thecodeholic" variant="red" target="_blank">
+            View my channel
+          </x-core.button-link>
         </div>
       </div>
     </div>

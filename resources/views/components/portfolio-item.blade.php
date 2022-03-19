@@ -21,26 +21,7 @@
       <h3 class="font-bold text-lg text-dark dark:text-gray-300 mb-4">
         {{ $title }}
       </h3>
-      <a
-        href="{{$github}}"
-        target="_blank"
-        class="
-          text-body-color
-          text-sm
-          font-semibold
-          py-3
-          px-7
-          inline-block
-          border
-          rounded-md
-          hover:bg-primary
-          hover:border-primary
-          hover:text-white
-          transition
-        "
-      >
-        View Details
-      </a>
+      <x-core.button-link :href="$github" variant="outline-primary">View Details</x-core.button-link>
     </div>
   </div>
 </div>

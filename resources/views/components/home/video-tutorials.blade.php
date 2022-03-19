@@ -1,23 +1,3 @@
-@php
-    $videoTutorials = [
-        [
-            'videoId' => 'yXzWfZ4N4xU',
-            'title' => 'PHP Tutorial for Absolute Beginners - PHP Course 2021',
-            'description' => 'This is 5 hours PHP Course and in this course you will learn all the basics you need in PHP. This is good starting point if you want to learn PHP.'
-        ],
-        [
-            'videoId' => 'WLQDpY7lOLg',
-            'title' => 'Full Stack App with Laravel, Tailwindcss and Vue 3',
-            'description' => 'You will build a Full stack application, which includes Laravel REST API with authentication, Tailwind.css and Vue 3 with Vuex for UI'
-        ],
-        [
-            'videoId' => 'WKy-N0q3WRo',
-            'title' => 'Learn How to build PHP MVC Framework',
-            'description' => 'Video playlist which will show you how to build an MVC framework from scratch. This will help you understand how modern PHP frameworks work.'
-        ],
-    ]
-@endphp
-
 <!-- ====== Cards Section Start -->
 <section id="tutorials" class="dark:bg-slate-800 pt-24 pb-16">
     <div class="container">
@@ -39,11 +19,9 @@
             @endforeach
         </div>
       <div class="flex justify-center">
-        <a href="https://youtube.com/TheCodeholic"
-           target="_blank"
-           class="py-4 px-10 lg:px-8 xl:px-10 inline-flex items-center justify-center text-center text-white text-base bg-primary hover:bg-opacity-90 font-normal rounded-lg">
-            View All Tutorials
-        </a>
+        <x-core.button-link href="https://youtube.com/TheCodeholic" target="_blank" class="rounded-lg">
+          View All Tutorials
+        </x-core.button-link>
       </div>
     </div>
 </section>

@@ -19,26 +19,9 @@
           </p>
           <ul class="flex flex-wrap items-center">
             <li>
-              <a
-                href="#projects"
-                class="
-                    py-4
-                    px-6
-                    sm:px-10
-                    lg:px-8
-                    xl:px-10
-                    inline-flex
-                    items-center
-                    justify-center
-                    text-center text-white text-base
-                    bg-primary
-                    hover:bg-opacity-90
-                    font-normal
-                    rounded-lg
-                  "
-              >
+              <x-core.button-link href="#portfolio" variant="primary" class="rounded-lg">
                 My Projects
-              </a>
+              </x-core.button-link>
             </li>
           </ul>
           <div class="clients pt-16">
