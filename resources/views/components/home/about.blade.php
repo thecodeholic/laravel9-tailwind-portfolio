@@ -1,5 +1,5 @@
 <!-- ====== About Section Start -->
-<section class="dark:bg-slate-800 pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] overflow-hidden">
+<section id="about" class="dark:bg-slate-800 pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] overflow-hidden">
   <div class="container">
     <div class="flex flex-wrap justify-between items-center -mx-4">
       <div class="w-full lg:w-6/12 px-4">
