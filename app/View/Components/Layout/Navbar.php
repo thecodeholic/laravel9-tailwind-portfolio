@@ -19,7 +19,7 @@ class Navbar extends Component
             ['label' => 'About', 'href' => '#about'],
             ['label' => 'Projects', 'href' => '#portfolio'],
             ['label' => 'Coding Tutorials', 'href' => '#tutorials'],
-            ['label' => 'Testimonials', 'href' => '#testimonials' ],
+//            ['label' => 'Testimonials', 'href' => '#testimonials' ],
             ['label' => 'Contact', 'href' => '#contact'],
         ];
     }
