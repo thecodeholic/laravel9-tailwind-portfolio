@@ -19,9 +19,9 @@
           </p>
           <ul class="flex flex-wrap items-center">
             <li>
-              <x-core.button-link href="#portfolio" variant="primary" class="rounded-lg">
+              <x-button-link href="#portfolio" variant="primary" class="rounded-lg">
                 My Projects
-              </x-core.button-link>
+              </x-button-link>
             </li>
           </ul>
           <div class="clients pt-16">
@@ -29,7 +29,7 @@
               Follow me on social media
               <span class="w-8 h-[1px] bg-body-color inline-block ml-2"></span>
             </h6>
-            <x-core.social-icons></x-core.social-icons>
+            <x-social-icons></x-social-icons>
           </div>
         </div>
       </div>

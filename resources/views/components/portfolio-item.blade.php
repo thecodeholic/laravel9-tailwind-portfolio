@@ -1,6 +1,6 @@
 <div
   x-data="{categories: {{ json_encode($categories) }} }"
-  :class="showCards == 'all' || categories.includes(showCards) ? 'block' : 'hidden' "
+  :class="selectedTab == 'all' || categories.includes(selectedTab) ? 'block' : 'hidden' "
   class="w-full md:w-1/2 xl:w-1/3 px-4"
 >
   <div class="relative mb-12">
@@ -21,7 +21,7 @@
       <h3 class="font-bold text-lg text-dark dark:text-gray-300 mb-4">
         {{ $title }}
       </h3>
-      <x-core.button-link :href="$github" variant="outline-primary">View Details</x-core.button-link>
+      <x-button-link :href="$github" variant="outline-primary">View Details</x-button-link>
     </div>
   </div>
 </div>

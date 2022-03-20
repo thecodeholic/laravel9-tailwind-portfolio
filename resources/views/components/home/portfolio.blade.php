@@ -3,7 +3,7 @@
   id="portfolio"
   x-data="
         {
-          showCards: 'all',
+          selectedTab: 'all',
           activeClasses: 'bg-primary text-white',
           inactiveClasses: 'text-body-color hover:bg-primary hover:text-white',
         }
@@ -28,8 +28,8 @@
         <ul class="flex flex-wrap justify-center mb-12 space-x-1">
           <li class="mb-1">
             <button
-              @click="showCards = 'all' "
-              :class="showCards == 'all' ? activeClasses : inactiveClasses "
+              @click="selectedTab = 'all' "
+              :class="selectedTab == 'all' ? activeClasses : inactiveClasses "
               class="inline-block py-2 md:py-3 px-5 lg:px-8 rounded-lg text-base font-semibold text-center transition "
             >
               All Projects
@@ -38,8 +38,8 @@
           @foreach($tabs as $tab)
           <li class="mb-1">
             <button
-              @click="showCards = '{{$tab}}' "
-              :class="showCards === '{{$tab}}' ? activeClasses : inactiveClasses "
+              @click="selectedTab = '{{$tab}}' "
+              :class="selectedTab === '{{$tab}}' ? activeClasses : inactiveClasses "
               class="inline-block py-2 md:py-3 px-5 lg:px-8 rounded-lg text-base font-semibold text-center transition ">
               {{$tab}}
             </button>

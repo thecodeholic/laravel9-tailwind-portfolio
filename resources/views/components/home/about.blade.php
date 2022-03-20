@@ -27,7 +27,7 @@
                 alt=""
                 class="rounded-2xl w-full"
               />
-              <x-core.about-dots></x-core.about-dots>
+              <x-about-dots></x-about-dots>
             </div>
           </div>
         </div>
@@ -52,9 +52,9 @@
             <span class="text-amber-500 font-bold">PHP</span> and <span class="text-amber-500 font-bold">JavaScript</span>. <br />
             My content is mostly focused on practical examples and projects. <br />
           </p>
-          <x-core.button-link href="https://youtube.com/thecodeholic" variant="red" target="_blank">
+          <x-button-link href="https://youtube.com/thecodeholic" variant="red" target="_blank">
             View my channel
-          </x-core.button-link>
+          </x-button-link>
         </div>
       </div>
     </div>

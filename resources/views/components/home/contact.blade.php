@@ -119,9 +119,9 @@
               </template>
             </div>
             <div>
-              <x-core.button class="w-full">
+              <x-button class="w-full">
                 Send Message
-              </x-core.button>
+              </x-button>
             </div>
           </form>
           <div>
@@ -141,8 +141,8 @@
                   />
                </svg>
             </span>
-            <x-core.contact-dots-top></x-core.contact-dots-top>
-            <x-core.contact-dots-bottom></x-core.contact-dots-bottom>
+            <x-contact-dots-top></x-contact-dots-top>
+            <x-contact-dots-bottom></x-contact-dots-bottom>
           </div>
         </div>
       </div>

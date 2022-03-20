@@ -1,17 +1,18 @@
 <?php
 
-namespace App\View\Components\Core;
+namespace App\View\Components;
 
 use Illuminate\View\Component;
+use function view;
 
-class ButtonLink extends Component
+class Button extends Component
 {
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(public string $href, public string $variant = 'primary', public string $target = '_self')
+    public function __construct(public string $variant = 'primary')
     {
         //
     }
@@ -23,6 +24,6 @@ class ButtonLink extends Component
      */
     public function render()
     {
-        return view('components.core.button-link');
+        return view('components.button');
     }
 }

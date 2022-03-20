@@ -1,4 +1,4 @@
-<x-core.call-to-action>
+<x-call-to-action>
   <x-slot:title>
     <h4 class="text-white text-base font-semibold mb-2">
       Check my PHP Developer Roadmap
@@ -8,10 +8,10 @@
       PHP For FREE
     </h2>
   </x-slot>
-    <x-core.button-link href="https://github.com/thecodeholic/php-developer-roadmap" variant="dark" class="mr-3" target="_blank">
+    <x-button-link href="https://github.com/thecodeholic/php-developer-roadmap" variant="dark" class="mr-3" target="_blank">
       View my channel
-    </x-core.button-link>
-    <x-core.button-link href="https://youtu.be/r9ndOH0tyfA" variant="red" target="_blank">
+    </x-button-link>
+    <x-button-link href="https://youtu.be/r9ndOH0tyfA" variant="red" target="_blank">
       Watch on YouTube
-    </x-core.button-link>
-</x-core.call-to-action>
+    </x-button-link>
+</x-call-to-action>
