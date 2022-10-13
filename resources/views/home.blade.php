@@ -5,5 +5,5 @@
     <x-home.portfolio></x-home.portfolio>
     <x-home.video-tutorials></x-home.video-tutorials>
 {{--    <x-home.testimonials></x-home.testimonials>--}}
-    <x-home.contact></x-home.contact>
+{{--    <x-home.contact></x-home.contact>--}}
 </x-app-layout>
