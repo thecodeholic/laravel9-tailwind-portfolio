@@ -9,7 +9,7 @@
     </h2>
   </x-slot>
     <x-button-link href="https://github.com/thecodeholic/php-developer-roadmap" variant="dark" class="mr-3" target="_blank">
-      View my channel
+      View on Github
     </x-button-link>
     <x-button-link href="https://youtu.be/r9ndOH0tyfA" variant="red" target="_blank">
       Watch on YouTube
