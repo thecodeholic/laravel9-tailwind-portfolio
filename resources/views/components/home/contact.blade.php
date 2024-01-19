@@ -87,9 +87,10 @@
                     };
                     this.successMessage = 'Thanks for your contact request. I will get back to you shortly.';
                   })
-                  .catch(res => {
-                    if (res.status === 422) {
-                      this.errors = result.errors;
+                  .catch(async (response) => {
+                    const res= await response.json()
+                    if (response.status === 422) {
+                      this.errors = res.errors;
                     }
                     console.log(res);
                   })
